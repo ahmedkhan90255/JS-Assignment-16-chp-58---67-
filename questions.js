@@ -21,6 +21,11 @@ document.write(`<p>Ans: ${renderElements[0].innerHTML}<br>
 2. ${renderElements[1].innerHTML}<br>
 3. ${renderElements[2].innerHTML}<br>
 4. ${renderElements[3].innerHTML}<br>
-5. ${renderElements[4].innerHTML}<br>
-</p>`)
-console.log(renderElements[0].textContent);
+5. ${renderElements[4].innerHTML}<br></p>`)
+
+document.write(`<h3>Q4:  Fill input value whose element id first-name using javascript. </h3>`)
+document.getElementById("first-name").value = "Ahmed"
+
+document.write(`<h3>Q5: Repeat part iv for id ”last-name” and “email” </h3>`)
+document.getElementById("last-name").value = "Khan"
+document.getElementById("email").value = "xyz@gmail.com"
