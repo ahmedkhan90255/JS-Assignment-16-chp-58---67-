@@ -29,3 +29,34 @@ document.getElementById("first-name").value = "Ahmed"
 document.write(`<h3>Q5: Repeat part iv for id ”last-name” and “email” </h3>`)
 document.getElementById("last-name").value = "Khan"
 document.getElementById("email").value = "xyz@gmail.com"
+
+document.write(`<h3>Q5: What is node type of element having id “form-content”</h3>`)
+var formContent = document.getElementById("form-content")
+var gg = formContent.nodeType
+document.write(`<p>Ans: ${gg}</p>`)
+
+document.write(`<h3>Q6: Show node type of element having id “lastName” and its child node.</h3>`)
+var lastName = document.getElementById("lastName")
+var nodeTypeQ6 = lastName.nodeType
+var childNodeQ6 = lastName.childNodes
+document.write(`<p>Ans: ${nodeTypeQ6} <br> ${childNodeQ6}`)
+console.log(lastName.childNodes);
+
+document.write(`<h3>Q7: Update child node of element having id “lastName”.</h3>`)
+var childNodeQ7 = childNodeQ6.innerText = "Updated innerText of child Node"
+document.write(childNodeQ7);
+
+document.write(`<h3>Q8Get First and last child of id “main-content”.</h3>`)
+document.write(`<p>Ans: ${idOfMainContent.firstElementChild.innerHTML} <br>
+${idOfMainContent.lastElementChild.innerHTML}</p>`)
+
+document.write(`<h3>Q9: Get next and previous siblings of id “lastName”.</h3>`)
+var lastNameID = document.getElementById("lastName")
+document.write(`<p>Ans: ${lastNameID.previousElementSibling.innerHTML}<br>
+${lastNameID.nextElementSibling.innerHTML}</p>`)
+
+document.write(`<h3>Q10: Get parent node and node type of element having id “email”</h3>`)
+
+var emailId = document.getElementById("email")
+document.write(`<p>Ans: ${emailId.parentNode.innerHTML}<br>
+${emailId.nodeType}</p>`)
